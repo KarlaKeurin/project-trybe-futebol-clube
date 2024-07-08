@@ -8,7 +8,7 @@ const AddNewMatchBtn = () => (
       data-testid="header__add_match_btn"
       to="/matches/settings"
     >
-      + Adicionar nova partida
+      Adicionar nova partida
     </Link>
   </div>
 );
