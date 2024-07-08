@@ -83,12 +83,7 @@ npm install && npm run install:apps
 
 ## Rodando o Docker Compose
 
-Entre no diretório `app`
-```
-cd app
-```
-
-Execute os containers
+Execute os containers na raíz do projeto
 ```
 npm run compose:up
 ```
