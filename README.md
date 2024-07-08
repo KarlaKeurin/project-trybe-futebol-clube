@@ -6,11 +6,10 @@
 
   Nesse projeto, construi **um back-end dockerizado utilizando modelagem de dados através do Sequelize**, respeitando regras de negócio do projeto. A API é capaz de ser consumida pelo front-end. 🚀
 
-  </details>
+  
 
   <details>
   <summary><strong> Regras de negócios da página de classificação dos times: </strong></summary>
-
   
 
     - `Classificação`: Posição na classificação;
@@ -58,3 +57,59 @@
     | Classificação | Time        | P   | J   | V   | E   | D   | GP  | GC  | SG  | %    |
     | ------------- | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | ---- |
     | 1             | Ferroviária | 38  | 15  | 12  | 2   | 1   | 44  | 13  | 31  | 84.4 |
+</details>
+
+## Variáveis de ambiente
+
+Para rodar o backend separadamente, é necessário adicionar as variáveis de ambiente no seu `.env`. Pode alterar o arquivo `.env.example` no projeto e após retirar o `.exemple`, ficando apenas `.env`.
+
+## Rodando o projeto localmente
+
+Clone o projeto
+```
+git clone 
+```
+Entre no diretório do projeto
+```
+cd project-trybe-futebol-clube
+```
+
+Instale as dependências na raíz do projeto e nos diretórios backend e frontend
+```
+npm install && npm run install:apps
+```
+
+## Rodando o Docker Compose
+
+Entre no diretório `app`
+```
+cd app
+```
+
+Execute os containers
+```
+npm run compose:up
+```
+### Acesse o app através do endpoint http://localhost:3000/
+
+Para parar a execução dos containers rode o comando
+```
+npm run compose:down
+```
+
+## Rodando os testes do Back-end
+
+Entre no diretório `backend`
+```
+cd app/backend
+```
+
+Execute os testes
+```
+npm run test
+```
+
+Para saber a cobertura dos testes
+```
+npm run test:coverage
+```
