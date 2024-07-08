@@ -61,13 +61,15 @@
 
 ## Variáveis de ambiente
 
-Para rodar o backend separadamente, é necessário adicionar as variáveis de ambiente no seu `.env`. Pode alterar o arquivo `.env.example` no projeto e após retirar o `.exemple`, ficando apenas `.env`.
+Para rodar o backend separadamente, é necessário adicionar as variáveis de ambiente no seu `.env`.
+<br/>
+Altere o [arquivo .env.example](./app/backend/.env.example) no projeto, salve e após retire o `.exemple`, ficando apenas `.env`.
 
 ## Rodando o projeto localmente
 
 Clone o projeto
 ```
-git clone 
+git clone git@github.com:KarlaKeurin/project-trybe-futebol-clube.git 
 ```
 Entre no diretório do projeto
 ```
