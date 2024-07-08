@@ -1,5 +1,6 @@
 import * as express from 'express';
 import 'express-async-errors';
+import router from './routes';
 
 import errorMiddleware from './middlewares/errorMiddleware';
 
@@ -11,11 +12,10 @@ class App {
 
     this.config();
 
-    // Não remover essa rota
     this.app.get('/', (req, res) => res.json({ ok: true }));
 
-    // Não remova esse middleware de erro, mas fique a vontade para customizá-lo
-    // Mantenha ele sempre como o último middleware a ser chamado
+    this.app.use(router);
+
     this.app.use(errorMiddleware);
   }
 
@@ -38,5 +38,4 @@ class App {
 
 export { App };
 
-// Essa segunda exportação é estratégica, e a execução dos testes de cobertura depende dela
 export const { app } = new App();
